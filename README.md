@@ -3,6 +3,7 @@
 Este projeto simula o controle de dois semáforos em um cruzamento usando a biblioteca Tkinter para a criação de uma interface gráfica em Python. O ciclo dos semáforos alterna entre verde, amarelo e vermelho de forma automatizada.
 
 ### Funcionalidades
+```plaintext
 Visualização de Semáforos: Exibição gráfica de dois semáforos.
 Controle de Estado: Alterna entre os estados verde, amarelo e vermelho.
 Cronograma de Ciclo:
@@ -17,7 +18,7 @@ Tkinter: Biblioteca para a interface gráfica.
 OOP (Programação Orientada a Objetos): Estruturação do código.
 ### Estrutura do Código
 **Arquitetura do Projeto**
-
+```
 ```plaintext
 TrafficLight_Controller/
 │
