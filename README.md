@@ -16,9 +16,10 @@ Controle Manual: Botões para iniciar e parar o ciclo dos semáforos.
 Python: Linguagem de programação.
 Tkinter: Biblioteca para a interface gráfica.
 OOP (Programação Orientada a Objetos): Estruturação do código.
+```
 ### Estrutura do Código
 **Arquitetura do Projeto**
-```
+
 ```plaintext
 TrafficLight_Controller/
 │
