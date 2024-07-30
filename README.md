@@ -35,6 +35,8 @@ TrafficLight_Controller/
 **Arquivos**
 ***model/model_traffic.py:*** Contém a classe TrafficLight que representa um semáforo e gerencia seus estados.
 
+
+
 class TrafficLight:
     def __init__(self, canvas, x, y):
         # Inicializa o semáforo
@@ -42,7 +44,6 @@ class TrafficLight:
         self.green_light = canvas.create_oval(x+5, y+5, x+45, y+45, fill="black")
         self.yellow_light = canvas.create_oval(x+5, y+55, x+45, y+95, fill="black")
         self.red_light = canvas.create_oval(x+5, y+105, x+45, y+145, fill="black")
-
     def set_state(self, state):
         # Define o estado das luzes do semáforo
         if state == "green":
