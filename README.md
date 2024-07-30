@@ -36,14 +36,14 @@ TrafficLight_Controller/
 ***model/model_traffic.py:*** Contém a classe TrafficLight que representa um semáforo e gerencia seus estados.
 
 
-
-class TrafficLight:
+    class TrafficLight:
     def __init__(self, canvas, x, y):
         # Inicializa o semáforo
         self.canvas = canvas
         self.green_light = canvas.create_oval(x+5, y+5, x+45, y+45, fill="black")
         self.yellow_light = canvas.create_oval(x+5, y+55, x+45, y+95, fill="black")
         self.red_light = canvas.create_oval(x+5, y+105, x+45, y+145, fill="black")
+        
     def set_state(self, state):
         # Define o estado das luzes do semáforo
         if state == "green":
@@ -67,7 +67,7 @@ class TrafficLight:
 
 from model.model_traffic import TrafficLight
 
-class TrafficService:
+    class TrafficService:
     def __init__(self, traffic_light1: TrafficLight, traffic_light2: TrafficLight):
         # Inicializa o serviço de tráfego
         self.traffic_light1 = traffic_light1
@@ -110,15 +110,15 @@ class TrafficService:
 
 ***main.py:*** Contém o código principal que inicializa e executa a aplicação.
 
-import tkinter as tk
-from model.model_traffic import TrafficLight
-from service.service_traffic import TrafficService
-
-class TrafficApp:
-    def __init__(self, root):
-        # Inicializa a aplicação
-        self.root = root
-        self.root.title("Semáforo Cruzamento")
+    import tkinter as tk
+    from model.model_traffic import TrafficLight
+    from service.service_traffic import TrafficService
+    
+    class TrafficApp:
+        def __init__(self, root):
+            # Inicializa a aplicação
+            self.root = root
+            self.root.title("Semáforo Cruzamento")
         
         self.canvas = tk.Canvas(root, width=400, height=300)
         self.canvas.pack()
@@ -142,13 +142,13 @@ class TrafficApp:
         # Para o serviço de tráfego
         self.service.stop()
 
-def main():
-    root = tk.Tk()
-    app = TrafficApp(root)
-    root.mainloop()
-
-if __name__ == '__main__':
-    main()
+    def main():
+        root = tk.Tk()
+        app = TrafficApp(root)
+        root.mainloop()
+    
+    if __name__ == '__main__':
+        main()
 
 
 
