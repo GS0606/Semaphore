@@ -163,7 +163,7 @@ Clone ou baixe o repositório.
 Navegue até o diretório onde os arquivos estão localizados.
 Execute o script principal com o comando:
 
-<<<python main.py>>>
+***python main.py***
 
 **Interface:**
 
