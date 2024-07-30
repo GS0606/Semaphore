@@ -67,7 +67,7 @@ TrafficLight_Controller/
 
 ***service/service_traffic.py:*** Contém a classe TrafficService que gerencia o ciclo dos semáforos.
 
-from model.model_traffic import TrafficLight
+    from model.model_traffic import TrafficLight
 
     class TrafficService:
     def __init__(self, traffic_light1: TrafficLight, traffic_light2: TrafficLight):
